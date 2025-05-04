@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TempConvert | Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d55009, #00f2fe);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Header Section */
+    header {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align it to the top of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+
+  /* Body Padding */
+  body {
+    padding-top: 5rem; /* Add padding to prevent content overlap with the fixed header */
+    padding-bottom: 5rem; /* Add padding to prevent content overlap with the fixed footer */
+  }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav ul li {
+      display: inline-block;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    
+      transition: all 0.3s;
+    }
+
+    header nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Main Section */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 500px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a.button {
+      background: #fff;
+      color: #376799;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    a.button:hover {
+      background: #e0e0e0;
+      color: #0056b3;
+    }
+
+    /* Features Section */
+    #features {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      color: #333;
+      width: 100%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    #features h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    #features p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .feature-list {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .feature-item {
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .feature-item img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    footer p {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+  }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="converter.html">Converter</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>🌡️ Welcome to TempConvert</h1>
+    <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin in one click and with Dark Mode!</p>
+    
+    <div class="button-group">
+      <a href="converter.html" class="button">Start Converting</a>
+      <a href="portfolio.html" class="button">View Portfolio</a>
+    </div>
+  </main>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>💡 Features of TempConvert</h2>
+    <p>TempConvert makes temperature conversions easy, fast, and accurate. Here are the key features of our tool:</p>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <img src="etu.png" alt="Easy to Use">
+        <h3>Easy to Use</h3>
+        <p>Simply enter the temperature value, choose the units, and get the result instantly!</p>
+      </div>
+      <div class="feature-item">
+        <img src="unit.jpg" alt="Multiple Units">
+        <h3>Multiple Units</h3>
+        <p>Supports Celsius, Fahrenheit, and Kelvin conversions for all your needs.</p>
+      </div>
+      <div class="feature-item">
+        <img src="dark.jpg" alt="Dark Mode">
+        <h3>Dark Mode</h3>
+        <p>Switch to Dark Mode for a more comfortable experience during late-night conversions.</p>
+      </div>
+    </div>
+
+    <a href="converter.html" class="button">Start Converting</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer><center>    <p>© 2025 TempConvert. All rights reserved.</p>
+    <p><a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://www.example.com/terms" target="_blank">Terms of Service</a></p>
+  </center>
+</footer>
+
+</body>
+</html>

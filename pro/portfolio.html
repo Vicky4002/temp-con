@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0fdbee;
+      color: black;
+      padding: 2rem;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 1rem 0;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+
+    /* Body padding to prevent overlap with the fixed header */
+    body {
+      padding-top: 6rem;
+      padding-bottom: 5rem;
+    }
+
+  
+
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+        position: bottom;
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Profile Picture Styling */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1rem 0;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+  /* About Me Section Styling */
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-me {
+    text-align: center;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .about-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-me p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-me .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="converter.html">Converter</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <section><center>   
+<div class="about-me">
+    <img src="pic.jpeg" alt="Profile Picture" class="profile-img" />
+      <h2>Vignesh R</h2>
+      <p>Web Developer | Frontend Designer | Tech Enthusiast</p>
+      <p>I'm a passionate web developer focused on building clean, responsive, and interactive websites. I enjoy turning ideas into reality through elegant code and modern design.</p>
+</center>
+  </section>
+
+  <section>
+    <h2>🧩 Projects</h2>
+
+    <div class="project">
+      <h3>🌡️ Temperature Converter</h3>
+      <p>Convert temperatures between Celsius, Fahrenheit, and Kelvin dynamically with live background changes and dark mode.</p>
+      <a href="converter.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>📷 Photography Website</h3>
+      <p>I designed a photography website design using Figma during my internship on Full-Stack Development.</p>
+      <a href="https://www.figma.com/proto/t973APfs25jroRrl2DHMRJ/Photography-website?node-id=0-1&p=f&t=dQl9alZ0oSx0cOnD-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=401%3A23" target="_blank">View Project</a>
+    </div>
+    
+    <div class="project">
+      <h3>☁️ High Converting Landing Page</h3>
+      <p>I designed a High Converting Landing Page using Figma during my internship on UI/UX Design.</p>
+      <a href="https://www.figma.com/proto/zjsFiSEW6cpkSCvfaPHwzV/high-converting-page?node-id=3-1202&t=ivWNuuFTvMBGcbhk-0&scaling=min-zoom&content-scaling=fixed&page-id=3%3A1201&starting-point-node-id=53%3A2484" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:vigneshvicky4002@gmail.com">vigneshvicky4002@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Vicky4002" target="_blank">Vicky4002</a></p>
+    <p>Resume: <a href="RESUME.pdf" target="_blank">Resume</a></p>
+  </section>
+
+  <!-- Footer Section -->
+
+<footer>
+    <p>© 2025 TempConvert. All rights reserved.</p>
+    <p><a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://www.example.com/terms" target="_blank">Terms of Service</a></p>
+  </footer>
+
+
+</body>
+</html>
